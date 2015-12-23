@@ -3,7 +3,7 @@ import pandas as pd
 
 @click.command()
 @click.option('--count', default=1, help='Number of rows.')
-@click.option('--name', prompt='Your name',
+@click.option('--name', default='No Name',
               help='The person to greet.')
 @click.option('--greeting', default='Hello', help='Greeting string to use.')
 def hello(count, name, greeting):

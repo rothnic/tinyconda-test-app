@@ -12,13 +12,13 @@ modifies the example click app to build up a DataFrame of greetings.
 ```
 
 # uses default CMD in Dockerfile
-→ docker run --rm -it test_app /app/app.py
+→ docker run --rm -it test_app /app/app.py --name=Nick
 Your name: Nick
   greeting  name
 0    Hello  Nick
 
 # overrides CMD in Dockerfile
-→ docker run --rm -it test_app /app/app.py --count=3
+→ docker run --rm -it test_app /app/app.py --count=3 --name=Nick
 Your name: Nick
   greeting  name
 0    Hello  Nick
